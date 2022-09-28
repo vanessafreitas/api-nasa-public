@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "110f4413-1aec-4f93-825a-50c5cf18c0a2",
+		"name": "API Nasa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"_postman_id": "8939666f-82f4-4a6e-b1c4-5178555aaee1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "SpI94Kk7t4FMKUoVPltPdyoljM6egcqiqEx77RlL",
+						"key": "api_key",
+						"in": "query"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?date=2021-05-24",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2021-05-24"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://apod.nasa.gov/apod/image/2202/bluemarble_apollo17_3000.jpg",
+			"_postman_id": "580ebf5f-cbc0-41aa-baf0-ba2731d739e8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://apod.nasa.gov/apod/image/2202/bluemarble_apollo17_3000.jpg"
+			},
+			"response": []
+		}
+	]
+}
